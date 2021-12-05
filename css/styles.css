@@ -261,8 +261,21 @@ img {
 }
 
 /* Услуги ВебСтудии */
+
+.services.section {
+  padding-top: 0;
+}
+
+.services .section-title-main {
+  margin-bottom: 50px;
+}
+
 .services-list {
-  list-style: none;
+  display: flex;
+}
+
+.services-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Наша команда */
