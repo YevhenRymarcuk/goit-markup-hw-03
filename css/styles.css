@@ -34,7 +34,7 @@
   --text-accent-color: #2196f3;
   --element-accent-color: #2196f3;
 
-  /* Переменная зазоров в сетках елементов */
+  /* Переменная зазоров в сетках элементов */
   --flexbox-items-gap: 30px;
 }
 
@@ -436,8 +436,11 @@ address {
   margin-left: var(--flexbox-items-gap);
 }
 
-.works-item-link-images {
-  margin-bottom: 20px;
+.border-picture-caption {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .works-item-link {
@@ -450,6 +453,7 @@ address {
   line-height: 2;
   letter-spacing: 0.06em;
   text-align: left;
+  margin-bottom: 4px;
 }
 
 .works-list .item-text {
