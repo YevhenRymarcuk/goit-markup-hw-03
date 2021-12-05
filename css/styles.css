@@ -94,6 +94,20 @@ img {
 
 /* I. Стили главной страницы */
 /* Шапка сайта */
+
+.header .container {
+  border-bottom: 1px solid #ececec;
+
+  display: flex;
+}
+
+.nav,
+.nav-list,
+.contacts-list {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   color: var(--logo-basic-text-color);
 
@@ -103,6 +117,10 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .accent-logo {
@@ -127,9 +145,21 @@ img {
   letter-spacing: 0.02em;
 }
 
+/*.nav-item {
+  padding: 32px 0;
+}*/
+
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .nav-link {
   color: var(--title-text-color);
   text-decoration: none;
+
+  display: inline-block;
+
+  padding: 32px 0;
 }
 
 .nav-list .nav-link.current {
@@ -148,12 +178,22 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  margin-left: auto;
+}
+
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .contact-mail,
 .contact-number {
   color: var(--primary-text-color);
   text-decoration: none;
+
+  display: inline-block;
+
+  padding: 32px 0;
 }
 
 .contact-mail:hover,
