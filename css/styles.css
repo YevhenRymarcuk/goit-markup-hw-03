@@ -337,6 +337,15 @@ img {
 /* Подвал сайта */
 footer {
   background-color: var(--secondary-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer .logo {
+  display: inline-block;
+
+  margin: 0 0 20px 0;
+  padding: 0;
 }
 
 address {
@@ -349,9 +358,19 @@ address {
   letter-spacing: 0.03em;
 }
 
+.address p {
+  margin-bottom: 9px;
+}
+
 .footer .contact-mail,
 .footer .contact-number {
   color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  padding: 0;
+}
+
+.footer .contact-mail {
+  margin-bottom: 9px;
 }
 
 .footer .contact-mail:hover,
