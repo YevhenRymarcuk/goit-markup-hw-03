@@ -33,6 +33,9 @@
 
   --text-accent-color: #2196f3;
   --element-accent-color: #2196f3;
+
+  /* Переменная зазоров в сетках елементов */
+  --flexbox-items-gap: 30px;
 }
 
 body {
@@ -247,7 +250,7 @@ img {
 }
 
 .benefits-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: var(--flexbox-items-gap);
 }
 
 .benefits-list .item-title {
@@ -275,7 +278,7 @@ img {
 }
 
 .services-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: var(--flexbox-items-gap);
 }
 
 /* Наша команда */
@@ -292,7 +295,7 @@ img {
 }
 
 .team-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: var(--flexbox-items-gap);
 }
 
 .team-item {
@@ -421,7 +424,20 @@ address {
 
 /* Список работ студии */
 .works-list {
-  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: calc(-1 * var(--flexbox-items-gap));
+  margin-left: calc(-1 * var(--flexbox-items-gap));
+}
+
+.works-item {
+  margin-top: var(--flexbox-items-gap);
+  margin-left: var(--flexbox-items-gap);
+}
+
+.works-item-link-images {
+  margin-bottom: 20px;
 }
 
 .works-item-link {
