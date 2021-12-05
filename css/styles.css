@@ -1,0 +1,292 @@
+/* Палитра сайта */
+
+/* -----Фон страницы-----
+Первичный цвет фона: #ffffff
+Вторичный цвет фона: #2f303a
+Цвет фона отдельных секций: #F5F4FA
+
+--------Цвет текста------
+Первичный цвет текста: #757575
+Вторичный цвет текста: #ffffff
+Цвет текста заголовков: #212121
+Базовый цвет логотипа: #000000
+
+--------Цвет кнопок------
+Первичный цвет кнопок: #F5F4FA
+
+--------Цвет акцента-----
+Цвет акцента текста: #2196F3
+Цвет акцента элемента: #2196F3
+*/
+
+:root {
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #2f303a;
+  --section-bg-color: #f5f4fa;
+
+  --primary-text-color: #757575;
+  --secondary-text-color: #ffffff;
+  --title-text-color: #212121;
+  --logo-basic-text-color: #000000;
+
+  --primary-button-color: #f5f4fa;
+
+  --text-accent-color: #2196f3;
+  --element-accent-color: #2196f3;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+h2 {
+  color: var(--title-text-color);
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+h3 {
+  color: var(--title-text-color);
+}
+
+/* I. Стили главной страницы */
+/* Шапка сайта */
+.logo {
+  color: var(--logo-basic-text-color);
+
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.accent-logo {
+  color: var(--text-accent-color);
+}
+
+.footer .logo {
+  color: var(--secondary-text-color);
+}
+
+.logo:hover,
+.logo:focus {
+  color: var(--text-accent-color);
+}
+
+.nav-list {
+  list-style: none;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav-link {
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+
+.nav-list .nav-link.current {
+  color: var(--text-accent-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--text-accent-color);
+}
+
+.contacts-list {
+  list-style: none;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contact-mail,
+.contact-number {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+.contact-mail:hover,
+.contact-mail:focus,
+.contact-number:hover,
+.contact-number:focus {
+  color: var(--text-accent-color);
+}
+
+/* Блок "ГЕРОЙ"*/
+.hero {
+  background-color: var(--secondary-bg-color);
+}
+
+.hero-title {
+  color: var(--secondary-text-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-btn {
+  color: var(--secondary-text-color);
+  background-color: var(--element-accent-color);
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+/* Преимущества / особенности ВебСтудии */
+
+.benefits-list {
+  list-style: none;
+}
+.benefits-list .item-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* Услуги ВебСтудии */
+.services-list {
+  list-style: none;
+}
+
+/* Наша команда */
+.team {
+  background-color: var(--section-bg-color);
+}
+
+.team-list {
+  list-style: none;
+}
+
+.team-item-link {
+  text-decoration: none;
+}
+
+.team-list .item-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-list .item-text {
+  color: var(--primary-text-color);
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Подвал сайта */
+footer {
+  background-color: var(--secondary-bg-color);
+}
+
+address {
+  color: var(--secondary-text-color);
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer .contact-mail,
+.footer .contact-number {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer .contact-mail:hover,
+.footer .contact-mail:focus,
+.footer .contact-number:hover,
+.footer .contact-number:focus {
+  color: var(--text-accent-color);
+}
+
+/* II. Стили страницы "Портфолио" */
+/* Список фильтров */
+.filters-list {
+  list-style: none;
+}
+
+.btn {
+  color: var(--title-text-color);
+  background-color: var(--primary-button-color);
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--secondary-text-color);
+  background-color: var(--element-accent-color);
+}
+
+/* Список работ студии */
+.works-list {
+  list-style: none;
+}
+
+.works-item-link {
+  text-decoration: none;
+}
+
+.works-list .item-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+
+.works-list .item-text {
+  color: var(--primary-text-color);
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
