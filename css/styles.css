@@ -71,6 +71,7 @@ p,
 ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 img {
@@ -139,8 +140,6 @@ img {
 }
 
 .nav-list {
-  list-style: none;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -170,8 +169,6 @@ img {
 }
 
 .contacts-list {
-  list-style: none;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -246,9 +243,16 @@ img {
 /* Преимущества / особенности ВебСтудии */
 
 .benefits-list {
-  list-style: none;
+  display: flex;
 }
+
+.benefits-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .benefits-list .item-title {
+  margin-bottom: 10px;
+
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
