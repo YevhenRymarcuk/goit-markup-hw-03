@@ -204,9 +204,17 @@ img {
 /* Блок "ГЕРОЙ"*/
 .hero {
   background-color: var(--secondary-bg-color);
+  min-height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+
   color: var(--secondary-text-color);
 
   font-weight: 900;
@@ -218,6 +226,11 @@ img {
 }
 
 .hero-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 32px;
+
   color: var(--secondary-text-color);
   background-color: var(--element-accent-color);
 
@@ -226,8 +239,6 @@ img {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
 }
