@@ -249,6 +249,10 @@ img {
   display: flex;
 }
 
+.benefits-item {
+  flex-basis: calc(100% - (3 * var(--flexbox-items-gap) / 4));
+}
+
 .benefits-item:not(:last-child) {
   margin-right: var(--flexbox-items-gap);
 }
@@ -277,6 +281,10 @@ img {
   display: flex;
 }
 
+.services-item {
+  flex-basis: calc(100% - (2 * var(--flexbox-items-gap)) / 3);
+}
+
 .services-item:not(:last-child) {
   margin-right: var(--flexbox-items-gap);
 }
@@ -292,6 +300,10 @@ img {
 
 .team-list {
   display: flex;
+}
+
+.team-item {
+  flex-basis: calc(100% - (3 * var(--flexbox-items-gap)) / 4);
 }
 
 .team-item:not(:last-child) {
@@ -434,6 +446,8 @@ address {
 .works-item {
   margin-top: var(--flexbox-items-gap);
   margin-left: var(--flexbox-items-gap);
+
+  flex-basis: calc(100% / 3 - var(--flexbox-items-gap));
 }
 
 .border-picture-caption {
